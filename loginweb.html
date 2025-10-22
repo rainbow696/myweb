@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录界面</title>
+</head>
+<body bgcolor="aliceblue">
+    <center>
+        <form action="login" method="post">
+            <label for="username">用户名：</label><br>
+            <input type="text" id="username" name="username" placeholder="请输入用户名" required autocomplete="username"><br>
+            <label for="password">密码：</label><br>
+            <input type="password" id="password" name="password" placeholder="请输入密码" required autocomplete="current-password"><br>
+            <label>性别：</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">男</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">女</label><br>
+            <label for="phone">手机号：</label><br>
+            <input type="tel" id="phone" name="phone" maxlength="11" placeholder="请输入11位手机号" required autocomplete="tel"><br>
+            <label for="location">IP所在地：</label><br>
+            <select id="location" name="location" required>
+                <option value="" disabled selected>请选择所在地</option>
+                <option value="shandong">山东省</option>
+                <option value="shanghai">上海市</option>
+                <option value="beijing">北京市</option>
+                <option value="guangdong">广东省</option>
+            </select><br>
+            <label for="email">邮箱：</label><br>
+            <input type="email" id="email" name="email" placeholder="请输入邮箱" required autocomplete="email"><br>
+            <input type="submit" value="登录"><br>
+            <a href="registrationweb.html" target="_blank">未注册？点击注册</a><br>
+            <a href="newpasswordweb.html" target="_blank">忘记密码？</a>
+        </form>
+    </center>
+</body>
+</html>
